@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<!-- Style sheets used to add theming and functionality to webpage.-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/stylingsheet.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js">
+</script>
+</script>
+</head>
+<body>
+<!-- Content on this Page -->
+<section id="page1" data-role="page" data-theme="a">
+	<!-- Header for Feedback Page -->
+    <header data-role="header">
+        <h1>Buon Appetito - Feedback</h1>
+        <!-- Navigation Bar.-->
+        <nav data-role="navbar">
+            <ul>
+                <li>
+                	<!-- A link to go to the homepage. -->
+                	<a href="homepage.html">
+                		Home
+                	</a>
+                </li>
+                <li>
+                	<!-- A link to go to the food menu for the restaurant. -->
+                	<a href="foodmenu.html">
+                		Our Menu
+                	</a>
+                </li>
+                <li>
+                	<!-- A link to go to the contact us page. -->
+                	<a href="restaurantinfo.html">
+                		Contact Us
+                	</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Content/Body for this page. -->
+    <div data-role="content" class="content">
+        <center>
+        	<p>We appreciate any feedback that you have to provide.
+        	</p>
+        </center>
+        <!-- Form for users to submit feedback sent to database.txt file. -->
+        <form name="FeedbackForm" action="submitfeedback.php" method='post'>
+        	<center>
+        		<img src="images/feedback.png">
+        		</img>
+        		<br>
+        		</br>
+        		<b>Customer Name:</b>
+        			<br>
+        			</br>
+        				<input type="text" 
+        					name="FeedbackName" 
+        					id="FeedbackName" 
+        					placeholder="Insert a Name." 
+        					maxlength="40">
+        			<br>
+        			</br>
+        		<b>Contact Information:</b>
+        			<br>
+        			</br>
+        				<input type="text" 
+        					name="FeedbackContactInfo" 
+        					id="FeedbackContactInfo" 
+        					placeholder="Insert an email/mobile." 
+        					maxlength="50">
+        			<br>
+        			</br>
+        		<b>Feedback:</b>
+        			<br>
+        			</br>
+        				<textarea rows="7" 
+        					cols="50" 
+        					name="FeedbackResponse" 
+        					id="FeedbackResponse" 
+        					maxlength="400">
+        					Please enter your feedback here. 400 character limit.
+        				</textarea>
+				<input type="submit">
+				<input type="reset">
+        	</center>
+        </form>
+    </div>
+    <!-- Footer for this page. -->
+    <footer data-role="footer" style="height:90px;">
+		<center>
+			<a href="developerinfo.html"
+				data-role="button" 
+				data-rel="dialog">
+				Developer Information
+			</a>
+			<a href="feedback.html" 
+				data-role="button">
+				Feedback
+			</a>
+			<h4>&copy; Buon Appetito 2015</h4>
+		</center>
+	</footer>
+</section>
+<!-- end content on this page -->
+</body>
+</html>

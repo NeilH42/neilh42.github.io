@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!-- Style sheets used to add theming and functionality to webpage.-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/stylingsheet.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js">
+</script>
+</script>
+</head>
+<body>
+<!-- Section for this Page -->
+<section id="page1" data-role="page" data-theme="a">
+    <header data-role="header">
+        <h1>Buon Appetito - Home</h1>
+        <!-- Header for this page. -->
+        <nav data-role="navbar">
+            <ul>
+                <li>
+                	<a href="homepage.html">
+                		Home
+                	</a>
+                </li>
+                <li>
+                	<a href="foodmenu.html">
+                		Our Menu
+                	</a>
+                </li>
+                <li>
+                	<a href="restaurantinfo.html">
+                		Contact Us
+                	</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Content/Body for this Page -->
+    <div data-role="content" class="content">
+        <center>
+        	<p>Welcome to Buon Appetito!</p>
+			<img src="images/spaghettibolognese.jpg" style="width:100%">
+			<br></br>        
+			<table border="0" style="width:70%">
+				<!-- Icons for button widgets that link to each page. -->
+			  	<tr>
+					<td width="200">
+						<center>
+							<a href="foodmenu.html">
+								<img src="images/menu.png" style="width:50%">
+							</a>
+						</center>
+					</td>
+					<td width="200">
+						<center>
+							<a href="restaurantinfo.html">
+								<img src="images/contactus.png" style="width:50%">
+							</a>
+						</center>
+					</td> 
+					<td width="200">
+						<center>
+							<a href="feedback.html">
+								<img src="images/feedback.png" style="width:50%">
+							</a>
+						</center>
+					</td>
+					<td width="200">
+						<center>
+							<a href="developerinfo.html">
+								<img src="images/developer.png" style="width:50%">
+							</a>
+						</center>
+					</td>
+				</tr>
+				<!-- Text that supports the button widgets that also link to each page. -->
+				<tr>
+					<td width="200">
+						<center>
+							<a href="foodmenu.html" style="width:50%">
+								<p style="color:green">Our Menu
+								</p>
+							</a>
+						</center>
+					</td>
+					<td width="200">
+						<center>
+							<a href="restaurantinfo.html">
+								<p style="color:green">Contact Us
+								</p>
+							</a>
+						</center>
+					</td>
+					<td width="200">
+						<center>
+							<a href="feedback.html">
+								<p style="color:green">Feedback
+								</p>
+							</a>
+						</center>
+					</td>
+					<td width="200">
+						<center>
+							<a href="developerinfo.html">
+								<p style="color:green">Developer Information
+								</p>
+							</a>
+						</center>
+					</td> 
+				</tr>
+			</table>
+		</center>
+    </div>
+    <!-- Footer for this Page -->
+    <footer data-role="footer" style="height:90px;">
+		<center>
+			<a href="developerinfo.html"
+				data-role="button"
+				data-rel="dialog">
+				Developer Information
+			</a>
+			<a href="feedback.html" 
+				data-role="button">
+				Feedback
+			</a>
+			<h4>&copy; Buon Appetito 2015</h4>
+		</center>
+	</footer>
+</section>
+<!-- end content on this page -->
+</body>
+</html>
